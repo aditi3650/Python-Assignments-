@@ -1,0 +1,11 @@
+# Sort the following in ascending order and print all zeros on right side.
+#[0,1,2,10,4,1,0,56,2,0,1,3,0,56,0,4]
+
+list= [0,1,2,10,4,1,0,56,2,0,1,3,0,56,0,4]
+list.sort()
+print(list)
+
+def fun1(x):
+    return x==0
+list.sort(key=fun1, reverse= False)
+print ("Required sorted list :",list)
