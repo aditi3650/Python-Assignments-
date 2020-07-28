@@ -1,0 +1,17 @@
+# 1. Find all occuerences of substring in the given string and print the index values
+
+sen ="What we think we become, we are python programmers"
+sub ="we"
+res =[i for i in range(len(sen))
+     if sen.startswith(sub,i)]
+print("The start indices of the substring -we are:",str(res))
+
+
+#2. use isupper and islower method with different kind of strings
+
+a ="what we think we become, we are python programmers"
+print(a.isupper())
+print(a.islower())
+b ="HAPPY BIRTHDAY"
+print(b.isupper())
+print(b.islower())
