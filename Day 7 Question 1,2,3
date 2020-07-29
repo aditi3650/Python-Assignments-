@@ -1,0 +1,20 @@
+#1. Use given dictionary to make a new dictionary in which key becomes values and values becomes keys.
+port1={21:"FTP", 22:"SSH", 23:"telenet", 80:"http"}
+port2={value:key for key, value in port1.items()}
+print(port2)
+
+
+#2. Take a list of tuple as shown and make a new list which contains the sum of the number of tuples.
+tup1=[(1,2),(3,4),(5,6),(4,5)]
+list1=[]
+for i in range(0,len(tup1)):
+    x,y=tup1[i]
+    list1.append(x+y)
+print("sum of the tuple:",list1)
+
+#3. Take a list as shown and make the elements of inner lists and tuples to outer list.
+lst1=[(1,2,3),[1,2],['a','hit','less']]
+lst2=[]
+lst2=[i for each in lst1 for i in each]
+print(lst2)
+

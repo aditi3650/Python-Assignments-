@@ -1,0 +1,13 @@
+# Convert the given lists to a dictionary in one line code using list comprehension.
+
+list1=[1,2,3,4,5,6,7,8]
+list2=["a","b","c","d","e"]
+dct={}
+for key in list1:
+    for value in list2:
+        dct[key]=value
+        list2.remove(value)
+        break
+
+print(dct)
+
